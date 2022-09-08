@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding: 0px;
+    margin: 0;
+}
+
+#container{
+    /* background-color: rgb(201, 201, 201); */
+    background-color: #d9d3c5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 86%;
+    width: 100%;
+    position: absolute
+    /* flex-grow: calc(100%/3); */
+}
+
+button{
+    border-radius: 5px !important; 
+}
+
+#confirma{
+    background-color: #43b770;
+    color: rgb(37, 37, 37);
+    border: none;
+    padding: 5px;
+}
+
+#corrige{
+    background-color: #fea647;
+    color: rgb(37, 37, 37);
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#branco{
+    background-color: whitesmoke;
+    color: rgb(37, 37, 37);
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#brancoCorrigeConfirma{
+    margin-top: 20px;
+}
+
+#imgCandidato{
+ display: flex;
+ flex-direction: row;
+ justify-content: right;
+ align-items: center;
+
+ /* visibility:hidden; */
+}
+
+#foto{
+    /*  */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-right: 10px;
+    border: solid 1px black;
+    visibility: hidden;
+}
+
+img{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#coluna{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button:hover{
+    scale: 1.1;
+    transition: all 0.2s ease-in-out;
+}
+
+.botao{
+    background-color: #242422;
+    color: whitesmoke;
+    border: solid 1px rgb(68, 68, 68);
+    height: 30px;
+    width: 50px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: black 2px 2px 2px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#direita{
+    background-color: #3f3b3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+    height: 400px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 10px rgba(51, 51, 51, 0.13);
+    border: solid 1px black;
+}
+
+#esquerda{
+    /* background-color: #e5e5e3; */
+    background-image: linear-gradient(to top right, #e5e5e3, #dadada);
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    top: 50%;
+    width: 600px;
+    height: 400px;
+    margin-top: 35px;
+    box-shadow: 2px 2px 10px rgba(51, 51, 51, 0.13);
+    border: solid 1px black;
+}
+
+.tabela{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#infosCandidato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    width: 500px;
+    margin-left: 40px;
+} 
+
+#nomeCandidato, #numPartido, #partido{
+    border: solid black 1px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 30px;
+}
+
+h5:nth-child(1){
+    margin-top: 10px;
+}
+
+input{
+    margin: 5px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+/* div{
+    border: solid 1px red;
+} */
+
+#jusEleitoral{
+    background-color: #f3f0e7;
+    margin-bottom: 40px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(37, 37, 37);
+}
+
+#tseBrasao{
+    height: 60px;
+}
+
+#candidatos{
+    border-bottom:solid 2px #242422;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 85px;
+    background-color:#f3f0e7;
+    color: #242422;
+}
+
+.infoCandidato{
+    display: flex;
+    align-items: center;
+}
+
+.infoCandidato>img{
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 60px;
+}
+
+.infoCandidato>img:nth-child(1){
+    background-color:#f3f0e7;
+}
