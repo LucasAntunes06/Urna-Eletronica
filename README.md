@@ -1,4 +1,4 @@
-# Trabalho-da-Urna
+# Trabalho Urna Eletônica - Simulador
 Trabalho da disciplina de Programação Web I (IFRS-BG)
 
 O trabalho consiste na criação de um simulador de uma urna eletrônica (HTML, CSS e JS) que:

@@ -19,7 +19,7 @@ function inserir(valor) {
   let num1 = document.getElementById("num1").value
   let num2 = document.getElementById("num2").value
   const hidden = document.getElementById("valorEscondido")
-
+ 
   if (num1 == "") {
       document.getElementById("num1").value = valor;
       document.getElementById("num1").style.border = "solid 2px gray"
@@ -89,6 +89,9 @@ function votoBranco(){
   esquerda.innerHTML = "Voto anulado"}
 }
 
+// default:{
+//     codigo
+// }
 // switch(codigo){
   
 
@@ -172,12 +175,6 @@ function votoBranco(){
 
 
 
-
-
-
-// default:{
-//     codigo
-// }
 
 
 
