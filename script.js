@@ -95,6 +95,7 @@ function votar() {
     fim.style.display = "flex"
     $('foto').style.display = 'none'
   }
+  setInterval(function () {location.reload()},1000)
 }
 function votoBranco() {
   if (fim.style.display = "none") {
@@ -102,4 +103,5 @@ function votoBranco() {
     fim.style.display = "flex"
     $('foto').style.display = 'none'
   }
+  setInterval(function () {location.reload()},1000)
 }
