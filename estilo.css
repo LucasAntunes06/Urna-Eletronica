@@ -7,24 +7,41 @@
 }
 
 #container{
-    /* background-color: rgb(201, 201, 201); */
     background-color: #d9d3c5;
+    background-image: linear-gradient(#d9d3c5, #afaba2, #e7e7e7);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    height: 86%;
+    height: 70%;
     width: 100%;
-    position: absolute
-    /* flex-grow: calc(100%/3); */
+    position:static;
+    min-width: 30%;
+    flex-wrap: wrap;
+    flex-grow: calc(100%/3);
+    margin:auto;
+    border:solid black 1px;
+    margin-top: 30px;
 }
 
 button{
     border-radius: 5px !important; 
 }
 
+#reload{
+    font-weight: normal;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#reload-div{
+    display: flex;
+    justify-content: center;
+}
+
 #confirma{
     background-color: #43b770;
+    background-image: radial-gradient(#43b770, #2c8d51);
     color: rgb(37, 37, 37);
     border: none;
     padding: 5px;
@@ -32,6 +49,7 @@ button{
 
 #corrige{
     background-color: #fea647;
+    background-image: radial-gradient(#fea647, #d88934);
     color: rgb(37, 37, 37);
     border: none;
     padding: 5px;
@@ -40,13 +58,14 @@ button{
 
 #branco{
     background-color: whitesmoke;
+    background-image: radial-gradient(whitesmoke, white);
     color: rgb(37, 37, 37);
     border: none;
     padding: 5px;
     margin-right: 5px;
 }
 
-#brancoCorrigeConfirma{
+#branco-corrige-confirma{
     margin-top: 20px;
 }
 
@@ -55,8 +74,6 @@ button{
  flex-direction: row;
  justify-content: right;
  align-items: center;
-
- /* visibility:hidden; */
 }
 
 #foto{
@@ -97,6 +114,7 @@ button:hover{
 
 .botao{
     background-color: #242422;
+    background-image: linear-gradient(to top right, #242422, #0a0a0a);
     color: whitesmoke;
     border: solid 1px rgb(68, 68, 68);
     height: 30px;
@@ -111,6 +129,7 @@ button:hover{
 
 #direita{
     background-color: #3f3b3a;
+    background-image: linear-gradient(to top right, #3f3b3a, #1818188e);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -123,8 +142,7 @@ button:hover{
 }
 
 #esquerda{
-    /* background-color: #e5e5e3; */
-    background-image: linear-gradient(to top right, #e5e5e3, #dadada);
+    background-image: linear-gradient(to top right, #e5e5e3, whitesmoke, #dadada,whitesmoke, #dadada );
     display: flex;
     flex-direction: row;
     padding: 0px 10px 0px 10px;
@@ -132,7 +150,9 @@ button:hover{
     top: 50%;
     width: 600px;
     height: 400px;
+    min-width: 100px;
     margin-top: 35px;
+    margin-bottom: 20px;
     box-shadow: 2px 2px 10px rgba(51, 51, 51, 0.13);
     border: solid 1px black;
 }
@@ -172,10 +192,20 @@ h5:nth-child(1){
     margin-top: 10px;
 }
 
-input{
+input, input:active{
     margin: 5px;
     border: solid 1px black;
     text-align: center;
+    background-image: linear-gradient(to top right, #e5e5e3, #dadada);
+}
+
+input:active{
+    margin: 5px;
+    border: solid 1px black;
+    border-radius:1px ;
+    text-align: center;
+    background-image: linear-gradient(to top right, #e5e5e3, #dadada);
+    cursor: not-allowed;
 }
 
 /* div{
@@ -198,13 +228,15 @@ input{
 }
 
 #candidatos{
-    border-bottom:solid 2px #242422;
+    border-bottom:solid 1px #242422;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 85px;
-    background-color:#f3f0e7;
-    color: #242422;
+    background-color:rgb(190, 13, 48);
+    color: whitesmoke;
+    flex-wrap:nowrap;
+    flex-grow: calc(100%/3);
 }
 
 .infoCandidato{
@@ -216,8 +248,22 @@ input{
     margin-left: 10px;
     border-radius: 10px;
     height: 60px;
+    border: solid 1px black;
 }
 
 .infoCandidato>img:nth-child(1){
     background-color:#f3f0e7;
+}
+
+.zero{
+    justify-content: center;
+}
+
+#fim{
+    display: none;
+    flex-direction: row !important;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 8em;
 }
